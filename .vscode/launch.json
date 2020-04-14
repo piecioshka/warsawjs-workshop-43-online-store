@@ -1,0 +1,46 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Unit Tests: Jest",
+            "program": "${workspaceFolder}/node_modules/.bin/jest",
+            "args": [
+                "--color",
+                "--config",
+                "test/configs/jest.config.js"
+                // "${file}"
+            ],
+            "sourceMaps": true,
+            "sourceMapPathOverrides": {
+                "webpack:///./*": "${webRoot}/*",
+                "webpack:///src/*": "${webRoot}/src/*",
+                "webpack:///*": "*",
+                "webpack:///./~/*": "${webRoot}/node_modules/*"
+            },
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Unit Tests: Jasmine",
+            "program": "${workspaceFolder}/node_modules/.bin/jasmine",
+            "args": [
+                "--reporter=jasmine-console-reporter",
+                "--config=test/configs/jasmine.json"
+            ],
+            "sourceMaps": true,
+            "sourceMapPathOverrides": {
+                "webpack:///./*": "${webRoot}/*",
+                "webpack:///src/*": "${webRoot}/src/*",
+                "webpack:///*": "*",
+                "webpack:///./~/*": "${webRoot}/node_modules/*"
+            },
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}

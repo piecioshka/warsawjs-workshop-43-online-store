@@ -1,0 +1,81 @@
+{
+    "private": true,
+    "name": "warsawjs-workshop-43-online-store",
+    "description": "",
+    "version": "0.0.0",
+    "license": "MIT",
+    "author": {
+        "name": "Piotr Kowalski",
+        "email": "piecioshka@gmail.com",
+        "url": "https://piecioshka.pl/"
+    },
+    "scripts": {
+        "clear": "rm -rf dist/ coverage/ .nyc_output/",
+        "clear:all": "rm -rf node_modules/ && npm run clear",
+        "test": "jest",
+        "test:watch": "npm run test -- --watch",
+        "build": "webpack --config webpack/webpack.config.dev.js",
+        "build:prod": "webpack --config webpack/webpack.config.prod.js",
+        "prewatch": "npm run clear",
+        "watch": "webpack -w --config webpack/webpack.config.dev.js",
+        "start": "http-server dist/",
+        "dev": "webpack-dev-server --config webpack/webpack.config.dev.js",
+        "coverage": "npm run test -- --coverage",
+        "postversion": "git push --tags",
+        "predeploy": "npm version patch && git push && git push --tags",
+        "deploy": "cross-env NODE_DEBUG=gh-pages gh-pages -d dist/"
+    },
+    "dependencies": {
+        "bootstrap": "^4.4.1",
+        "node-snackbar": "^0.1.16"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.9.0",
+        "@babel/preset-env": "^7.9.5",
+        "@babel/register": "^7.9.0",
+        "@types/jest": "^25.2.1",
+        "babel-jest": "^25.3.0",
+        "babel-loader": "^8.1.0",
+        "cross-env": "^7.0.2",
+        "css-loader": "^3.5.2",
+        "file-loader": "^6.0.0",
+        "gh-pages": "^2.2.0",
+        "http-server": "^0.12.1",
+        "husky": "^4.2.5",
+        "isomorphic-fetch": "^2.2.1",
+        "jasmine": "^3.5.0",
+        "jasmine-console-reporter": "^3.1.0",
+        "jest": "^25.2.7",
+        "jsdom": "^16.2.2",
+        "jsdom-global": "^3.0.2",
+        "lint-staged": "^10.1.3",
+        "prettier": "^2.0.4",
+        "style-loader": "^1.1.4",
+        "webpack": "^4.42.1",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.10.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:piecioshka/warsawjs-workshop-43-online-store.git"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*": [
+            "prettier --write",
+            "git add"
+        ]
+    },
+    "prettier": {
+        "trailingComma": "all",
+        "tabWidth": 4,
+        "semi": true,
+        "singleQuote": true,
+        "arrowParens": "avoid",
+        "proseWrap": "never"
+    }
+}
