@@ -12,5 +12,6 @@ export class Component {
     render($target) {
         const $el = Component.parse(this.template);
         $target.append($el);
+        this.$el = $el;
     }
 }
