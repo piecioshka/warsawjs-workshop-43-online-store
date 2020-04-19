@@ -5,7 +5,7 @@ import Snackbar from 'node-snackbar';
 
 import { Cart } from './components/cart';
 import { Product } from './components/product';
-import DUMMY_PRODUCTS from '../test/dummies/products.dummy.json';
+import { instance as ProductsService } from './services/products-service';
 
 function renderCart() {
     const $toolbar = document.querySelector('.toolbar');
@@ -22,16 +22,22 @@ function renderProduct(cart, product) {
     p.onClickAdd(async () => {
         try {
             await cart.addProduct(p);
-            Snackbar.show({ text: 'product was add to cart' });
+            Snackbar.show({
+                text: `Product "${p.model.name}" was add to cart`,
+            });
         } catch (err) {
-            Snackbar.show({ text: 'product cannot be added to cart' });
+            Snackbar.show({
+                text: `Product "${p.model.name}" cannot be added to cart`,
+                actionTextColor: '#ff0000',
+            });
         }
     });
 }
 
-function renderProductList(cart) {
+async function renderProductList(cart) {
     // const products = Array.from({ length: 3 });
-    const products = DUMMY_PRODUCTS;
+    // const products = DUMMY_PRODUCTS;
+    const products = await ProductsService.fetchProducts();
     products.forEach(product => {
         renderProduct(cart, product);
     });

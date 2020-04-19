@@ -13,6 +13,14 @@ export class Component {
         return doc.body.firstElementChild;
     }
 
+    update() {
+        const $el = Component.parse(this.template);
+        if (this.$el) {
+            this.$el.parentNode.replaceChild($el, this.$el);
+            this.$el = $el;
+        }
+    }
+
     render($target) {
         const $el = Component.parse(this.template);
         $target.append($el);
