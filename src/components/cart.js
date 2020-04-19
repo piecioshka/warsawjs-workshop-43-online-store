@@ -27,4 +27,13 @@ export class Cart extends Component {
             }
         });
     }
+
+    // async addProduct(product) {
+    //     if (product instanceof Product) {
+    //         this.list.push(product);
+    //         return this.list.length;
+    //     } else {
+    //         throw new Error(String(this.list.length));
+    //     }
+    // }
 }

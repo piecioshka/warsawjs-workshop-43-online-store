@@ -3,6 +3,10 @@ export class Component {
         return '<p>test</p>';
     }
 
+    constructor() {
+        this.model = null;
+    }
+
     static parse(template) {
         const parser = new DOMParser();
         const doc = parser.parseFromString(template, 'text/html');
