@@ -12,7 +12,7 @@
     "scripts": {
         "clear": "rm -rf dist/ coverage/ .nyc_output/",
         "clear:all": "rm -rf node_modules/ && npm run clear",
-        "test": "jest",
+        "test": "jest --config test/configs/jest.config.js",
         "test:watch": "npm run test -- --watch",
         "build": "webpack --config webpack/webpack.config.dev.js",
         "build:prod": "webpack --config webpack/webpack.config.prod.js",
