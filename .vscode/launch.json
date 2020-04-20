@@ -23,24 +23,6 @@
                 "webpack:///./~/*": "${webRoot}/node_modules/*"
             },
             "internalConsoleOptions": "openOnSessionStart"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Unit Tests: Jasmine",
-            "program": "${workspaceFolder}/node_modules/.bin/jasmine",
-            "args": [
-                "--reporter=jasmine-console-reporter",
-                "--config=test/configs/jasmine.json"
-            ],
-            "sourceMaps": true,
-            "sourceMapPathOverrides": {
-                "webpack:///./*": "${webRoot}/*",
-                "webpack:///src/*": "${webRoot}/src/*",
-                "webpack:///*": "*",
-                "webpack:///./~/*": "${webRoot}/node_modules/*"
-            },
-            "internalConsoleOptions": "openOnSessionStart"
         }
     ]
 }

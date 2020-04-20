@@ -13,7 +13,6 @@ Project based on:
 -   <https://github.com/piecioshka/boilerplate-babel-webpack>
 -   <https://github.com/piecioshka/boilerplate-husky-lint-staged-prettier>
 -   <https://github.com/piecioshka/test-jest-typescript>
--   <https://github.com/piecioshka/test-jasmine-babel>
 
 ## Features
 
