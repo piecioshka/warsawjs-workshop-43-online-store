@@ -1,6 +1,6 @@
 # warsawjs-workshop-43-online-store
 
-💾 Workshop project — Test JavaScript app
+⛩️ WarsawJS Workshop #43 — JavaScript (Intermediate Level)
 
 ## Demo 🎉
 
