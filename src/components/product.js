@@ -5,7 +5,7 @@ export class Product extends Component {
         this.model = this.model || {};
         return `
             <div class="product card mb-3 text-center">
-                <img class="product-image" src="${this.model.imageUrl}" />
+                <img class="product-image" src="${this.model.productUrl}" />
                 <div class="card-body">
                     <h5 class="card-title mb-0">${this.model.name}</h5>
                 </div>

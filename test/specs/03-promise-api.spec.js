@@ -7,8 +7,8 @@ describe('03-Promise API', () => {
     describe('Cart', () => {
         it('adding to cart should based on Promise', done => {
             const c = new Cart();
-            const dummyProduct = new Product();
-            c.addProduct(dummyProduct).then(size => {
+            const fakeProduct = new Product();
+            c.addProduct(fakeProduct).then(size => {
                 expect(size).toEqual(1);
                 done();
             });

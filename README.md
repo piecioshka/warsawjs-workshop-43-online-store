@@ -93,7 +93,7 @@ Project based on:
 -   [window.fetch]
 -   new [Response]
 -   [isomorphic-fetch]
--   Dummy
+-   Fixtures
 -   <https://fakes.herokuapp.com/products>
 
 ### 05-RegExp

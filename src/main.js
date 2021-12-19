@@ -36,7 +36,7 @@ function renderProduct(cart, product) {
 
 async function renderProductList(cart) {
     // const products = Array.from({ length: 3 });
-    // const products = DUMMY_PRODUCTS;
+    // const products = FIXTURE_PRODUCTS;
     const products = await ProductsService.fetchProducts();
     products.forEach(product => {
         renderProduct(cart, product);

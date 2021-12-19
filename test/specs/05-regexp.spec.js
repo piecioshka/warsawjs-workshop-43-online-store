@@ -9,7 +9,7 @@ describe('05-Regexp', () => {
             const $target = document.createElement('div');
             const c = new Product();
             c.model = {
-                imageUrl: 'http://example.org',
+                productUrl: 'http://example.org',
             };
             c.render($target);
             expect(
