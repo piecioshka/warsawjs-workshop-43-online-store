@@ -139,7 +139,6 @@ Give a ⭐️ if this project helped you!
 
 ## Related
 
--   <https://github.com/piecioshka/workshop-angular-youtube>
 -   <https://github.com/piecioshka/workshop-javascript-prework-lotto>
 -   <https://github.com/piecioshka/workshop-javascript-prework-printer>
 -   <https://github.com/piecioshka/workshop-javascript-prework-static-page>
