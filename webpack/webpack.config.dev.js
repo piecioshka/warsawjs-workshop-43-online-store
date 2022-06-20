@@ -7,10 +7,5 @@ module.exports = {
 
     mode: 'development',
 
-    devtool: '#source-map',
-
-    devServer: {
-        overlay: true,
-        writeToDisk: true,
-    },
+    devtool: 'source-map',
 };

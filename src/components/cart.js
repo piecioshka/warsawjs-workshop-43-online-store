@@ -18,11 +18,11 @@ export class Cart extends Component {
     }
 
     addProduct(product) {
-        const ENDING_WITH_ER = /er$/;
+        const ENDING_WITH_E = /e$/;
 
         return new Promise((resolve, reject) => {
             if (product instanceof Product) {
-                if (product.model && ENDING_WITH_ER.test(product.model.name)) {
+                if (product.model && ENDING_WITH_E.test(product.model.name)) {
                     reject(this.list.length);
                     return;
                 }
