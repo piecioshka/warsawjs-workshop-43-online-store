@@ -94,7 +94,7 @@ Project based on:
 -   new [Response]
 -   [isomorphic-fetch]
 -   Fixtures
--   <https://fakes.herokuapp.com/products>
+-   <https://fakes.piecioshka.io/products>
 
 ### 05-RegExp
 

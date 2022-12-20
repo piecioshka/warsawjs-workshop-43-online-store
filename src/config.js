@@ -1,1 +1,1 @@
-export const productsUrl = 'https://fakes.herokuapp.com/products';
+export const productsUrl = 'https://fakes.piecioshka.io/products';
