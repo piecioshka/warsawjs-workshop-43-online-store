@@ -2,7 +2,7 @@
 
 ⛩️ WarsawJS Workshop #43 — JavaScript (Intermediate Level)
 
-## Demo 🎉
+## Preview 🎉
 
 <https://piecioshka.github.io/warsawjs-workshop-43-online-store/>
 
