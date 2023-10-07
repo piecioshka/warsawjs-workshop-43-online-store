@@ -8,7 +8,7 @@
 
 ## Motivation
 
-Project based on:
+Project is based on:
 
 -   <https://github.com/piecioshka/boilerplate-babel-webpack>
 -   <https://github.com/piecioshka/boilerplate-husky-lint-staged-prettier>
@@ -131,10 +131,6 @@ npm run coverage
 Contributions, issues and feature requests are welcome!
 
 Feel free to check [issues page](https://github.com/piecioshka/warsawjs-workshop-43-online-store/issues/).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
 
 ## License
 
