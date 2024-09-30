@@ -18,7 +18,7 @@
         "build:prod": "webpack --config webpack/webpack.config.prod.js",
         "prewatch": "npm run clear",
         "watch": "webpack -w --config webpack/webpack.config.dev.js",
-        "start": "http-server -c-1 dist/",
+        "start": "http-server dist/ -c-1",
         "dev": "webpack-dev-server --config webpack/webpack.config.dev.js",
         "coverage": "npm run test -- --coverage",
         "postversion": "git push --tags",
