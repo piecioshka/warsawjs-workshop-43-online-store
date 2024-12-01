@@ -56,11 +56,8 @@
         "url": "git@github.com:piecioshka/warsawjs-workshop-43-online-store.git"
     },
     "prettier": {
-        "trailingComma": "all",
         "tabWidth": 4,
-        "semi": true,
         "singleQuote": true,
-        "arrowParens": "always",
         "proseWrap": "never"
     }
 }
